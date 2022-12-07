@@ -1,8 +1,10 @@
 # Car sharing web app (REST API service) with aiohttp
 
+run: python main.py --secrets-dir secrets
+
 ## Description
 
-We have a database with our cars ids, their locations and current users. We need to implement two handlers that returns info about our cars: regular and admin handler.
+To run carsharing we need a database with our cars ids, their locations and current users. We need to implement two handlers that returns info about our cars: regular and admin handler.
 
 ## Rest API handlers
 
