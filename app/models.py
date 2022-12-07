@@ -30,9 +30,10 @@ class Car:
 
     @classmethod
     def from_db(cls, row) -> Car:
+        print(row)
         return cls(
-            id=row['id'],
-            location=Location(lat=row['location'][0], lon=row['location'][1]),
-            user=User.from_db(row['user'])
+            id=row[0],
+            location=Location(lat=row[1], lon=row[2]),
+            user=User.from_db(row[3])
         )
 
